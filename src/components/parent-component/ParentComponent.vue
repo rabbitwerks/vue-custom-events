@@ -23,7 +23,9 @@ export default {
   },
   methods: {
     receivedColor(payload) {
-      this.receivedDataColor = payload;
+      this.receivedDataColor = payload.data;
+      console.log('emitted from: ', payload.origin);
+      console.log('listened on: ', { vueInstance: this.$options._componentTag, domElement: this.$el});
     }
   }
 }

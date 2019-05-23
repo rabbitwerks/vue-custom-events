@@ -15,12 +15,20 @@
 export default {
   data() {
     return {
-      colorData: '#a2d113'
+      colorData: '#a2d113',
     }
   },
   methods: {
     sendColorData() {
-      this.$emit('sending-color-data', this.colorData)
+      console.log(this)
+      const payload = {
+        origin: {
+          vueInstance: this.$options._componentTag,
+          domElement: this.$el,
+        },
+        data: this.colorData,
+      }
+      this.$emit('sending-color-data', payload)
     }
   }
 }
