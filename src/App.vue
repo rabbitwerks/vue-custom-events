@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="header--wrapper">
+      <img alt="Vue logo" src="./assets/logo.png">
+      <span class="header--text">Custom Events</span>
+    </div>
+    <ParentComponent />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import ParentComponent from './components/parent-component/ParentComponent'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    ParentComponent
   }
 }
 </script>
@@ -23,6 +26,18 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.header--text {
+  font-size: 5rem;
 }
 </style>
