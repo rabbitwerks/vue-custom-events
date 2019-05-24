@@ -2,8 +2,8 @@
   <div class="parent--outer" :style="{ 'background-color': receivedDataColor }">
     <h1>Parent Component</h1>
     <div class="parent--inner">
+      <h4>Received Color: {{ receivedDataColor || 'natta bitch' }}</h4>
       <ChildComponent @sending-color-data="receivedColor"/>
-
     </div>
   </div>
 </template>
@@ -40,7 +40,8 @@ export default {
 }
 .parent--inner {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 </style>
