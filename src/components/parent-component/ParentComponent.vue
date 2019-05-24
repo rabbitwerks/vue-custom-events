@@ -2,7 +2,7 @@
   <div class="parent--outer" :style="{ 'background-color': receivedDataColor }">
     <h1>Parent Component</h1>
     <div class="parent--inner">
-      <h4>Received Color: {{ receivedDataColor || 'natta bitch' }}</h4>
+      <h4>Received Color: {{ receivedDataColor || 'natta' }}</h4>
       <ChildComponent @sending-color-data="receivedColor"/>
     </div>
   </div>
