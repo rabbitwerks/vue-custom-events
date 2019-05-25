@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="header--wrapper">
-      <img alt="Vue logo" src="./assets/logo.png">
+      <img alt="Vue logo" src="./assets/logo.png" class="logo">
       <span class="header--text">Custom Events</span>
     </div>
     <ParentComponent />
@@ -39,5 +39,13 @@ export default {
 }
 .header--text {
   font-size: 5rem;
+}
+@media screen and (max-width: 480px) {
+.logo {
+  width: 20%;
+}
+.header--text {
+  font-size: 3rem;
+}
 }
 </style>
