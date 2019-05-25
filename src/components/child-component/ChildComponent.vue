@@ -64,6 +64,7 @@ button {
 @media screen and (max-width: 480px) {
   .child--outer {
     width: 90%;
+    padding: 0;
   }
 }
 </style>

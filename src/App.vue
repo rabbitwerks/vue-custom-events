@@ -42,10 +42,13 @@ export default {
 }
 @media screen and (max-width: 480px) {
 .logo {
-  width: 20%;
+  width: 30%;
+  margin: 0 2rem 0 2.5%;
 }
 .header--text {
-  font-size: 3rem;
+  font-size: 3.75rem;
+  text-align: left;
+  line-height: 3.5rem;
 }
 }
 </style>
