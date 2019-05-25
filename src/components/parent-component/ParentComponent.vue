@@ -3,7 +3,7 @@
     <h1>Parent Component</h1>
     <div class="parent--inner">
       <h4>Received Color: {{ receivedDataColor || 'natta' }}</h4>
-      <ChildComponent @sending-color-data="receivedColor"/>
+      <ChildComponent @sending-color-data="receivedColor" @click="console.log('click')" />
     </div>
   </div>
 </template>

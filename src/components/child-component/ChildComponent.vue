@@ -20,7 +20,6 @@ export default {
   },
   methods: {
     sendColorData() {
-      console.log(this)
       const payload = {
         origin: {
           vueInstance: this.$options._componentTag,
