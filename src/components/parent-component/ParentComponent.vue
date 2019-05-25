@@ -43,6 +43,10 @@ export default {
   flex-direction: column;
   align-items: center;
 }
-
+@media screen and (max-width: 480px) {
+  .parent--outer {
+    width: 95%;
+  }
+}
 </style>
 

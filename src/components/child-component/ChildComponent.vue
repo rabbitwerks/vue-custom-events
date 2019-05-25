@@ -60,4 +60,10 @@ button {
   border: 2px solid #10524c;
   padding: .5rem 1rem;
 }
+
+@media screen and (max-width: 480px) {
+  .child--outer {
+    width: 90%;
+  }
+}
 </style>
